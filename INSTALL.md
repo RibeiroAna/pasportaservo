@@ -1,17 +1,26 @@
 # INSTALI
 
-Ubuntu 16.10 / Debian Jessie:
+Por instali PS, vi bezonos unue instali unue Git, Python3, LibJPEG kaj Postgresql. Jen kiel fari tion en malsimilaj operaciaj sistemoj:
+
+#### Ubuntu 16.10 / Debian Jessie:
 
     sudo apt install git python3-dev python3-pip libjpeg-dev \
       postgresql-contrib postgresql-server-dev-all
 
-Fedora 25:
+#### Fedora 25:
 
     sudo dnf install git python3-devel python3-crypto redhat-rpm-config zlib-devel libjpeg-devel libzip-devel \
       postgresql-server postgresql-contrib postgresql-devel 
+   
+#### MacOS:
 
+Por instali Git, sekvu [tiujn paŝojn](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac).
+Por instali Python 3, sekvu [tiujn paŝojn](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos).
+Por PostGresSQL, sekvu [tiujn paŝojn](https://www.codefellows.org/blog/three-battle-tested-ways-to-install-postgresql/#macosx) (vi povas ignori la parton pri Brew, jam farita en la unua ŝtuparo). 
+Por LibJPEG sekvu [tiujn paŝojn](http://mac-dev-env.patrickbougie.com/libjpeg/). 
+   
 
-#### PostgreSQL
+### PostgreSQL
 
 Se vi estas sub Fedora:
 
@@ -26,7 +35,7 @@ Por ĉiuj:
     createdb pasportaservo
 
 
-#### VirtualenvWrapper
+### VirtualenvWrapper
 
 Uzi virtualenvwrapper ne estas deviga, Pitono 3 venas kun `venv`. 
 Tamen tiu ilo estas praktika kaj uzata sur la servilo.
@@ -48,7 +57,7 @@ Kaj poste kreu dosierujon por la virtualaj medioj:
     python -V  # Ĉu Python 3.5?
 
 
-#### Fontkodo
+### Fontkodo
 
 Iru al la [Github projektpaĝo](https://github.com/tejo-esperanto/pasportaservo)
 kaj forku ĝin. Poste, vi povas kloni ĝin:
