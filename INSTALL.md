@@ -34,6 +34,15 @@ Por ĉiuj:
     createdb via-uzantnomo
     createdb pasportaservo
 
+kaze okazus eraro je krei la datumbazo kun via uzantnomo, provu fari la jenon:
+    
+
+    sudo -u postgres psql template1
+    ALTER USER postgres with encrypted password 'xxxxxxx'; #foriru kun Ctrl + D
+    sudo /etc/init.d/postgresql restart
+    createuser -U postgres -d -e -E -l -P -r -s `whoami`
+    
+    
 
 ### VirtualenvWrapper
 
